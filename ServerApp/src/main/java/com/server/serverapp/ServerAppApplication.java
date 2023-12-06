@@ -21,16 +21,6 @@ public class ServerAppApplication {
         SpringApplication.run(ServerAppApplication.class, args);
     }
 
-//    @Bean
-//    CommandLineRunner run(ServerRepo serverRepo){
-//        return args -> {
-//            serverRepo.save(new Server(null, "192.168.1.2","Ubunto","16GB", "personal",
-//                    "http://localhost:8080/server/image/server1.png", Status.SERVER_UP ));
-//            serverRepo.save(new Server(null, "192.168.1.25","Ubunto linux","32GB", "pc",
-//                    "http://localhost:8080/server/image/server3.png", Status.SERVER_UP ));
-//        };
-//
-//    }
 
     @Bean
     public CorsFilter corsFilter(){
